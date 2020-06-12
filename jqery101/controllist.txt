@@ -1,0 +1,23 @@
+hide - ok
+show - ok
+click - ok
+find - ok
+parent - ok
+index - ok
+eq - ok
+clone - ok 
+after - ok
+before - ok 
+val - ok
+append - ok
+html - ok
+replace - ok
+removeClass - ok
+addClass - ok
+attr - ok
+remove - ok
+removeAttr - ok
+each - ok
+prop - ? sor
+split - ok (slice)
+join - 

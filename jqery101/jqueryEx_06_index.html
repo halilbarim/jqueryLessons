@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("li").click(function(){
+                alert($(this).index());//index method get index of element
+            });
+            $("button").click(function(){
+                alert($(".hot").index($("#favorite")));//that use index take selector arg. $(for id)
+
+            });
+            
+        });
+
+    </script>
+
+
+</head>
+<body>
+        <p>click for view index</p>
+        <button>Get İndex</button>
+        <ul>
+            <li class="hot" >cofffeee</li>
+            <li class="hot" id="favorite">milkkkkk</li>
+            <li>sodaaaa</li>   
+        </ul>
+</body>
+</html>

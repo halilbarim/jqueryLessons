@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        //$(selector).method(function(){}); 
+        $(document).ready(function(){
+            $('button').click(function(){
+                var $x = $("div");
+                $x.prop("color","FF0000");
+                $x.append("the color property add value: " +
+                $x.prop("color"));
+                $x.removeProp("color");
+                $x.append("<br>Now the color property : "+
+                $x.prop("color"));
+
+
+            });
+            
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <button>add and removeee</button>
+    <div></div>
+
+</body>
+</html>

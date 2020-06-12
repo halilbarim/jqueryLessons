@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        //$(selector).method(function(){}); '<h6>I m new here</h6>'
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('ol').append('<h6>I m new here</h6>');//item add inner select item 
+            });
+            
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+    <button>add something inner element</button>
+    
+    <ol>
+        <li>alfa</li>
+        <li>beta</li>
+        <li>theta</li>
+    </ol>
+    <div>test</div>
+    
+    
+</body>
+</html>

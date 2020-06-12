@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeOut();//quick out
+                $("#div2").fadeOut('slow');//Slow out
+                $("#div3").fadeOut(3000);//3 second out
+            });
+            $("#fadeToogleButton").click(function(){
+                $("#div4").fadeToggle();//quick
+                $("#div5").fadeToggle('slow');//slow
+                $("#div6").fadeToggle(3000);//second
+            });
+            $("#fadeToButton").click(function(){
+                $("#div7").fadeTo("slow",0.15); //(speed,opacity)
+                $("#div8").fadeTo("slow",0.4); //(speed,opacity)
+                $("#div9").fadeTo("slow",0.7); //(speed,opacity)
+
+            });
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <button>click to magic fade out</button><br><br>
+    <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+    <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+    <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+    <br><br>
+    <button id="fadeToogleButton">click to magic fade toogle</button><br><br>
+    <div id="div4" style="width:80px;height:80px;background-color:rgb(172, 40, 199);"></div><br>
+    <div id="div5" style="width:80px;height:80px;background-color:rgb(110, 247, 110);"></div><br>
+    <div id="div6" style="width:80px;height:80px;background-color:rgb(23, 155, 231);"></div>
+    <br><br>
+    <button id="fadeToButton">click to magic fade toogle</button><br><br>
+    <div id="div7" style="width:80px;height:80px;background-color:rgb(172, 40, 199);"></div><br>
+    <div id="div8" style="width:80px;height:80px;background-color:rgb(110, 247, 110);"></div><br>
+    <div id="div9" style="width:80px;height:80px;background-color:rgb(23, 155, 231);"></div>
+    <br><br>
+</body>
+</html>

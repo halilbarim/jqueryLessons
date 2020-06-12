@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        //$(selector).method(function(){}); 
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('p').html("<h6>I m new here</h6>"); // thats method set selector item inner html or if dont take arg. return html exam: <h6>test</h6> 
+            });
+            
+        });
+
+    </script>
+
+
+</head>
+<body>
+    
+    <button>Click ME</button>
+    <p>there is sample</p>
+    <p>there is another sample</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("ul").find("span").css({"color":"red","border":"2px solid red"}); 
+                //find method choose element in ul element (child)
+            $("span").parent().css({"color":"blue","border":"2px solid yellow"})
+               //parent method choose upstair in span element (grand)
+        });
+
+    </script>
+    <style>
+        .ancestor * {
+            display: block;
+            border: 2ğx solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+<body class="ancestor">
+        <div style="width: 500px;">body (great-grandparent)
+            <ul>ul (direct parent)
+                <li>li (child)
+                    <span>span (grandchild)</span>
+                </li>
+            </ul>
+        </div>
+    
+
+
+</body>
+</html>

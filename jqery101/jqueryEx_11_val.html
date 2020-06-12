@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        //$(selector).method(function(){}); 
+        $(document).ready(function(){
+             $('button').click(function(){
+                 $('input:text').val("I see you"); //val method set new value for selector item
+             });
+            
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <button>CLİCK ME FOR SEE MAGİC</button>
+    <P>Name<input type="text" name="user"></P>
+</body>
+</html>
